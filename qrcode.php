@@ -30,6 +30,7 @@ DEALINGS IN THE SOFTWARE.
 // 	//echo $_SERVER['REMOTE_ADDR'];
 //     die;
 // }
+header('Content-type: image/png');
 
 if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
 	$generator = new QRCode($_REQUEST['d'], $_REQUEST);

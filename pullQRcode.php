@@ -1,7 +1,7 @@
 <?php
 
 
-$reqURL = 'qrcode.php?';
+$reqURL = 'xqrcode.php?';
 $temp = tempnam(sys_get_temp_dir(), 'TMP_');
 
 

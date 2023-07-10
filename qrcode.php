@@ -26,8 +26,8 @@ DEALINGS IN THE SOFTWARE.
 
 \****************************************************************************/
 
-if($_SERVER['REMOTE_ADDR'] != '127.0.0.1'){
-	echo $_SERVER['REMOTE_ADDR'];
+if($_SERVER['REMOTE_ADDR'] != '2a02:4780:1:6::b'){
+	//echo $_SERVER['REMOTE_ADDR'];
     die;
 }
 

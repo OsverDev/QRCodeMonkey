@@ -26,6 +26,10 @@ DEALINGS IN THE SOFTWARE.
 
 \****************************************************************************/
 
+if($_SERVER['REMOTE_ADDR'] != '127.0.0.1'){
+    die;
+}
+
 if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
 	$generator = new QRCode($_REQUEST['d'], $_REQUEST);
 	$generator->output_image();

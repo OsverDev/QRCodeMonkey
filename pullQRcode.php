@@ -29,7 +29,7 @@
 
 
 
-$dir    = '';
+$dir    = '/';
 $files1 = scandir($dir);
 $files2 = scandir($dir, SCANDIR_SORT_DESCENDING);
 

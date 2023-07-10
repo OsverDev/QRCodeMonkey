@@ -1,7 +1,7 @@
 <?php
 
 
-$reqURL = $_SERVER['DOCUMENT_ROOT'].'/qrcode.php?s=qr-h&d=https://www.echowho.com/pair/sdfsg2h121wq';
+$reqURL = $_SERVER['DOCUMENT_ROOT'].'/qrcode.php?s=qr-h&d=Test3';
 $temp = tempnam(sys_get_temp_dir(), 'TMP_');
 
 file_put_contents($temp, file_get_contents("$reqURL"));

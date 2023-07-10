@@ -1,7 +1,7 @@
 <?php
 
 
-$reqURL = 'https://qrcodes.myjson.site/qrcode.php?s=qr-h&d=Test3';
+$reqURL = '../qrcode.php?s=qr-h&d=Test3';
 $temp = tempnam(sys_get_temp_dir(), 'TMP_');
 
 file_put_contents($temp, file_get_contents("$reqURL"));

@@ -26,10 +26,10 @@ DEALINGS IN THE SOFTWARE.
 
 \****************************************************************************/
 
-if($_SERVER['REMOTE_ADDR'] != '2a02:4780:1:6::b'){
-	//echo $_SERVER['REMOTE_ADDR'];
-    die;
-}
+// if($_SERVER['REMOTE_ADDR'] != '2a02:4780:1:6::b'){
+// 	//echo $_SERVER['REMOTE_ADDR'];
+//     die;
+// }
 
 if (realpath(__FILE__) == realpath($_SERVER['SCRIPT_FILENAME'])) {
 	$generator = new QRCode($_REQUEST['d'], $_REQUEST);

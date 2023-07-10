@@ -1,7 +1,7 @@
 <?php
 
 
-$content = file_get_contents('https://qrcodes.myjson.site/qrcode.php?s=qr-h&d=https://www.echowho.com/pair/sdfsg2h121wq');
+$content = file_get_contents('https://qrcodes.myjson.site/qrcode.php?s=qr-h&d=Test3');
 file_put_contents('img.png', $content);
 
 header('Content-type: image/png');

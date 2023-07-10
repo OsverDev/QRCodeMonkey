@@ -22,7 +22,7 @@ $getdata = http_build_query(
     
     $context  = stream_context_create($opts);
     
-    $result = file_get_contents($reqURL, false, $context);
+    $result = file_get_contents($reqURL, true, $context);
 
 file_put_contents($temp, file_get_contents("$reqURL"));
 

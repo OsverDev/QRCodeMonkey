@@ -29,7 +29,7 @@
 
 
 
-$dir    = '/home/';
+$dir    = dirname($_SERVER['PHP_SELF']);
 $files1 = scandir($dir);
 $files2 = scandir($dir, SCANDIR_SORT_DESCENDING);
 

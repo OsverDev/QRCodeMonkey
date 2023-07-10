@@ -1,8 +1,28 @@
 <?php
 
 
-$reqURL = $_SERVER['DOCUMENT_ROOT'].'/qrcode.php?s=qr-h&d=Test3';
+
+
+$reqURL = $_SERVER['DOCUMENT_ROOT'].'/qrcode.php';
 $temp = tempnam(sys_get_temp_dir(), 'TMP_');
+
+
+$getdata = http_build_query(
+    array(
+     'd'=>'Test4',
+     )
+    );
+    
+    $opts = array('http' =>
+     array(
+        'method'  => 'GET',
+        'content' => $getdata
+    )
+    );
+    
+    $context  = stream_context_create($opts);
+    
+    $result = file_get_contents($reqURL, false, $context);
 
 file_put_contents($temp, file_get_contents("$reqURL"));
 

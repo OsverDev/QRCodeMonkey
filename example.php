@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php';
 
 use nguyenary\QRCodeMonkey\QRCode;
 
-$qrcode = new QRCode('nguyenary');
+$qrcode = new QRCode('THIS is a Test');
 
 // NOTE: Do not generate too many QR codes at once or your IP will be locked for a period of time
 

@@ -28,8 +28,11 @@
 
 
 
+$rootPath = $_SERVER['DOCUMENT_ROOT'];
+$thisPath = dirname($_SERVER['PHP_SELF']);
+$onlyPath = str_replace($rootPath, '', $thisPath);
 
-$dir    = dirname($_SERVER['PHP_SELF']);
+$dir    = $onlyPath;
 $files1 = scandir($dir);
 $files2 = scandir($dir, SCANDIR_SORT_DESCENDING);
 

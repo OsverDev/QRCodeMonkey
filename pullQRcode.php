@@ -26,7 +26,7 @@ $getdata = http_build_query(
 
 file_put_contents($temp, file_get_contents("$reqURL"));
 
-header('Content-type: image/png');
+//header('Content-type: image/png');
 echo file_get_contents($temp);
 //echo $reqURL;
 fclose($temp); // this removes the file
